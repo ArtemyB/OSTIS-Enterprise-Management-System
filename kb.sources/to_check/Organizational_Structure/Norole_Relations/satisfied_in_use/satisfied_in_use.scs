@@ -1,0 +1,18 @@
+satisfied_in_use
+	=> nrel_main_idtf:[Satisfied in use](*<-lang_en;;*);
+		[Удовлетворены использованием](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://satisfied_in_use_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: the_degree_of_accounting_and_stakeholder_engagement;
+	=> nrel_used_constants:
+		{
+			stakeholder
+		};;

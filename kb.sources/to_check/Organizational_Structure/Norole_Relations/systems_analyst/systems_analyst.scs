@@ -1,0 +1,20 @@
+systems_analyst
+	=> nrel_main_idtf:[Systems analyst](*<-lang_en;;*);
+		[Системный аналитик](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://systems_analyst_definition_en.html"
+					(*<- lang_en;;*);
+					"file://systems_analyst_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: cooperator;
+	=> nrel_used_constants:
+		{
+			expert
+		};;
