@@ -1,0 +1,18 @@
+dell_venue
+	=> nrel_main_idtf:[Dell Venue](*<-lang_en;;*);
+		[Dell Venue](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://dell_venue_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 8_mp;
+	=> nrel_rom: 1_gb;
+	<- dell;
+	<- mobile_phones;;

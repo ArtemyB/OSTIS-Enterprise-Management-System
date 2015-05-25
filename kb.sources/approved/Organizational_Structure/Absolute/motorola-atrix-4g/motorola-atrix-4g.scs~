@@ -1,0 +1,17 @@
+motorola_atrix_4g
+	=> nrel_main_idtf:[MOTOROLA ATRIX 4G](*<-lang_en;;*);
+		[MOTOROLA ATRIX 4G](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://motorola_atrix_4g_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 1_gb;
+	=> nrel_camera: 8_mp;
+	=> nrel_rom: 16_gb;
+	<= nrel_inclusion: motorola; mobile_phones;;

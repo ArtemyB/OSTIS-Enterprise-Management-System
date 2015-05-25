@@ -1,0 +1,24 @@
+nrel_rom
+	=> nrel_main_idtf:[The number of flash storage](*<-lang_en;;*);
+		[Количество флеш памяти](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[ROM](*<-lang_en;;*);
+		[Read-only memory](*<-lang_en;;*);
+		[ПЗУ](*<-lang_ru;;*);
+		[ Постоянное запоминающее устройство](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_rom_definition_en.html"
+					(*<- lang_en;;*);
+					"file://nrel_rom_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	<= nrel_inclusion: electronics; technology;;

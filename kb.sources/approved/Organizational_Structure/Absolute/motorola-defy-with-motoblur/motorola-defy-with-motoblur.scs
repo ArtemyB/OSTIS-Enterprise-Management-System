@@ -1,0 +1,18 @@
+motorola_defy_with_motoblur
+	=> nrel_main_idtf:[Motorola DEFY with MOTOBLUR](*<-lang_en;;*);
+		[Motorola DEFY with MOTOBLUR](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://motorola_defy_with_motoblur_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 2_gb;
+	<- motorola;
+	<- mobile_phones;;

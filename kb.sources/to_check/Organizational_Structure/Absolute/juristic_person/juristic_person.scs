@@ -1,0 +1,20 @@
+juristic_person
+	=> nrel_main_idtf:[Juristic person](*<-lang_en;;*);
+		[Юридическое лицо](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Legal person](*<-lang_en;;*);
+		[Juristical person](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://juristic_person_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_used_constants:
+		{
+			enterprise
+		};;

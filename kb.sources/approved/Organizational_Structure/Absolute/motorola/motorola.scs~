@@ -1,0 +1,17 @@
+motorola
+	=> nrel_main_idtf:[Motorola](*<-lang_en;;*);
+		[Моторола](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://motorola_definition_en.html"
+					(*<- lang_en;;*);
+					"file://motorola_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_location: usa;
+	<= enterprise;;

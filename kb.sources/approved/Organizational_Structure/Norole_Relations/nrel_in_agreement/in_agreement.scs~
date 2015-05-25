@@ -1,0 +1,18 @@
+in_agreement
+	=> nrel_main_idtf:[In agreement](*<-lang_en;;*);
+		[В согласии](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://in_agreement_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: the_degree_of_accounting_and_stakeholder_engagement;
+	=> nrel_used_constants:
+		{
+			stakeholder
+		};;

@@ -1,0 +1,17 @@
+samsung_mesmerize_a_galaxy_s_phone
+	=> nrel_main_idtf:[Samsung Mesmerize a Galaxy S phone](*<-lang_en;;*);
+		[Samsung Mesmerize a Galaxy S phone](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://samsung_mesmerize_a_galaxy_s_phone_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 2_gb;
+	<= nrel_inclusion: samsung; mobile_phones;;

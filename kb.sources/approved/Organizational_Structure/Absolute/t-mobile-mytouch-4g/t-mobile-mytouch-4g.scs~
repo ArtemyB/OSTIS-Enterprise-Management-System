@@ -1,0 +1,18 @@
+t_mobile_mytouch_4g
+	=> nrel_main_idtf:[T-Mobile myTouch 4G](*<-lang_en;;*);
+		[T-Mobile myTouch 4G](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://t_mobile_mytouch_4g_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 1_gb;
+	<- t_mobile;
+	<- mobile_phones;;

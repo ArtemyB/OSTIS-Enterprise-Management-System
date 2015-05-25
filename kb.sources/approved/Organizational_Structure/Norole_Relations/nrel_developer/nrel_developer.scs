@@ -1,0 +1,29 @@
+nrel_developer
+	=> nrel_main_idtf:[Developer](*<-lang_en;;*);
+		[Разработчик](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Design engineer](*<-lang_en;;*);
+		[Инженер-конструктор](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_developer_definition_en.html"
+					(*<- lang_en;;*);
+					"file://nrel_developer_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: nrel_post;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	=> nrel_used_constants:
+		{
+			work;
+			product;
+			nrel_cooperator;
+			resource
+		};;

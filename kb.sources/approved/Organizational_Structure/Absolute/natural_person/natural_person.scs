@@ -1,0 +1,16 @@
+natural_person
+	=> nrel_main_idtf:[Natural person](*<-lang_en;;*);
+		[Физическое лицо](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Physical person](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://natural_person_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: citizen;;

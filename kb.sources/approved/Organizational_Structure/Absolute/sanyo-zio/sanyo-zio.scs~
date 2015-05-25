@@ -1,0 +1,17 @@
+sanyo_zio
+	=> nrel_main_idtf:[SANYO ZIO](*<-lang_en;;*);
+		[SANYO ZIO](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://sanyo_zio_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 256_mb;
+	=> nrel_camera: 3_mp;
+	=> nrel_rom: 128_mb;
+	<= nrel_inclusion: sanyo; mobile_phones;;
