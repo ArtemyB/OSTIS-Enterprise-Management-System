@@ -1,0 +1,29 @@
+raw_material
+   => nrel_main_idtf:
+             [raw_material](*<-lang_en;;*);
+			 [Сырье](*<-lang_ru;;*);
+   <-  rrel_key_sc_element:...
+         (*
+		     <-sc_definition;;
+			 
+			=> nrel_main_idtf: [Definition (raw_material)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (Сырье)](*<- lang_ru;;*);;
+
+			 <=nrel_sc_text_translation:...
+			     (*
+				     ->rrel_example:
+					 [<b>Сырье<b> - предметы труда, подвергшиеся ранее 
+					 воздействию труда и предназначенные для дальнейшей 
+					 переработки]
+					     (*
+						     <-lang_ru;;
+		                     => nrel_format: format_html;;
+						 *);;
+		         *);;
+		 *);
+	<= nrel_inclusion: subject_matter_of_labor;
+    <= nrel_subdividing:
+        {
+		primary_raw_material;
+		secondary_raw_material
+        };;

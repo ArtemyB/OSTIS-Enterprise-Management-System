@@ -1,5 +1,5 @@
 document => nrel_inclusion: accounts_receivable;;
-
+finances => nrel_inclusion: accounts_receivable;;
 accounts_receivable
 	=> nrel_main_idtf: [accounts_receivable](*<- lang_en;;*);
 					   [дебиторская задолженность](*<- lang_ru;;*);
@@ -13,3 +13,19 @@ accounts_receivable
 					(*<- lang_ru;;*);;			
 			*);;
 		*);;
+accounts_receivable <- rrel_key_sc_element:...
+	(*
+		<- sc_statement;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+			[Нормальная дебиторская задолженность - задолженность подотчетных<br>
+			 лиц по выданным авансам на командировки и операционные расходы в <br>
+			пределах сроков, установленных для сдачи отчетов, а также задолженность <br>
+			поставщиков и подрядчиков по оплате товаров.]
+			(* 
+				<-lang_ru;;
+				=>nrel_format: format_html;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,45 @@
+document
+	-> rrel_record_field:
+		document_id;
+		document_number;
+		document_title;
+		document_date;
+		document_created_on;
+		document_modified_on;
+	-> rrel_record_first_field: document_id;
+	-> rrel_record_primary_key: document_id;;
+
+document_id 
+	=> nrel_main_idtf:
+		[Document ID](*<- lang_en;;*);
+		[Идентификатор документа](*<- lang_ru;;*);
+	=> nrel_next_item: document_number;;
+	
+document_number 
+	=> nrel_main_idtf:
+		[Document number](*<- lang_en;;*);
+		[Номер документа](*<- lang_ru;;*);
+	=> nrel_next_item: document_title;;
+
+document_title 
+	=> nrel_main_idtf:
+		[Document title](*<- lang_en;;*);
+		[Заголовок документа](*<- lang_ru;;*);
+	=> nrel_next_item: document_date;;
+
+document_date 
+	=> nrel_main_idtf:
+		[Document date](*<- lang_en;;*);
+		[Дата](*<- lang_ru;;*);
+	=> nrel_next_item: document_created_on;;
+
+document_created_on 
+	=> nrel_main_idtf:
+		[Date of creation](*<- lang_en;;*);
+		[Дата создания документа](*<- lang_ru;;*);
+	=> nrel_next_item: document_modified_on;;
+
+document_modified_on 
+	=> nrel_main_idtf:
+		[Date of modification](*<- lang_en;;*);
+		[Дата изменения документа](*<- lang_ru;;*);;
