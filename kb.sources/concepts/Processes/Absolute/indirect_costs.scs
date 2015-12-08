@@ -1,0 +1,21 @@
+indirect_costs
+	=> nrel_main_idtf:
+		[Indirect_costs](*<-lang_en;;*);
+		[Накладные расходы](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (indirect_costs)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (накладные расходы)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Накладные расходы</b> - дополнительные к основным затратам расходы, необходимые для обеспечения процессов производства, связанные с управлением,обслуживанием, содержанием и эксплуатацией оборудования плюс ненормиро ванные расходы.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: costs;
+		<= nrel_using_constants: costs;;

@@ -1,0 +1,22 @@
+management_process
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (management_process)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (процесс управления)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Процесс управления — это совокупность отдельных видов деятельности, направленных на упорядочение и координацию функционирования и развития организации и ее элементов в интересах достижения стоящих перед ними целей.]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<= nrel_using_constants:
+		{
+			nrel_problem;
+			firm
+		};;

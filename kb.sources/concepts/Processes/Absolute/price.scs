@@ -16,10 +16,21 @@ price
 							=> nrel_format: format_html;;
 						*);;
 					*);;
+
+			<= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>The price of the goods</b> — the amount of money (or other goods and services), shall be paid and received per unit of goods or services.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
 		*);
-	=> nrel_using_constants:
+	<= nrel_using_constants:
 		{
 			goods;
 			service;
 			money
 		};;
+

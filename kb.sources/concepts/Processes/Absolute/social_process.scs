@@ -1,0 +1,17 @@
+social_process
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (social_process)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (социальный процесс)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Социальный процесс</b> - серия явлений или взаимодействий, происходящих в организации, структуре групп и меняющих отношения между людьми или между составными элементами сообщества.]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: process;;

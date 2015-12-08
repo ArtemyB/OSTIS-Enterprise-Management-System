@@ -1,0 +1,21 @@
+finances
+	=> nrel_main_idtf:
+		[finances](*<-lang_en;;*);
+		[финансы](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (finances)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (финансы)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Финансы</b> - денежные средства как элемент народнохозяйственного оборота.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_using_constants: money;
+		<= nrel_inclusion: money;;

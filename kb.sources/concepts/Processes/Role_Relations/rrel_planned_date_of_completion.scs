@@ -1,0 +1,9 @@
+rrel_planned_date_of_completion
+        <- sc_node_role_relation;
+        <- sc_type_role_relation;
+        <- binary_relation;
+        => nrel_main_idtf:
+                [planned_date_of_completion'](*<- lang_en;;*);
+                [планируемая дата завершения'](*<- lang_ru;;*);
+        => nrel_first_domain: date;
+        => nrel_second_domain: event;;

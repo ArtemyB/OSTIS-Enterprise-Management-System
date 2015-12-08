@@ -1,0 +1,20 @@
+publishing_document
+	=> nrel_main_idtf:
+		[publishing_document](*<-lang_en;;*);
+		[публичный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (publishing_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (публичный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Публичный документ</b> - документ, созданный юридическим или физическим лицом, оформленный и удостоверенный в установленном порядке.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;;

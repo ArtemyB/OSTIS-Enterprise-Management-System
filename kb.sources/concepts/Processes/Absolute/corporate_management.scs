@@ -1,0 +1,22 @@
+corporate_management
+	=> nrel_main_idtf:
+		[corporate_management](*<- lang_en;;*);
+		[корпоративное управление](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Корпоративное управление</b> - это система взаимодействия, которая отражает интересы органов управления компании, акционеров, заинтересованных лиц, и направлена на получение максимальной прибыли от всех видов деятельности компании в соответствии с действующим законодательством с учетом международных стандартов.]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_inclusion: management;
+	=> nrel_using_constants:
+		{
+			profits
+		};;

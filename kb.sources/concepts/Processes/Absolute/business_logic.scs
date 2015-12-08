@@ -1,0 +1,20 @@
+business_logic
+	=> nrel_main_idtf:
+		[business_logic](*<-lang_en;;*);
+		[бизнес-логика](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (business_logic)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (бизнес-логика)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Бизнес-логика</b> - это реализация предметной области в информационной системе.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: bisness;;
