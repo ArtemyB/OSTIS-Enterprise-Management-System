@@ -1,0 +1,55 @@
+finances
+	=> nrel_main_idtf:
+		[finances](*<-lang_en;;*);
+		[финансы](*<-lang_ru;;*);
+	<-  rrel_key_sc_element:...
+         	(*
+		    	<-sc_definition;;
+			 
+			=> nrel_main_idtf: [Definition (finances)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [определение (финансы)](*<- lang_ru;;*);;
+
+			 <=nrel_sc_text_translation:...
+			(*
+				     ->rrel_example:
+					 [<b>Финансы</b>  – это экономические отношения, возникающие<br> 
+					 в процессе распределения и перераспределения стоимости<br>
+					 валового общественного продукта в связи с формированием<br>
+					 денежных потоков и использованием централизованных<br>
+					 и децентрализованных фондов денежных средств в целях<br>
+					 выполнения функций и задач государства]
+					     (*
+						     <-lang_ru;;
+		                     => nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: financial_resource;
+	<= nrel_subdividing:
+        {
+		state_finances;
+		corporate_finances;
+		local_finances;
+		finance_organization
+        };;
+finances <- rrel_key_sc_element:...
+	(*
+		<- sc_statement;;
+
+		=> nrel_main_idtf: [Утверждение (платежи, прибыль)](*<- lang_ru;;*);;
+
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+			[Роль финансов в хозяйственной деятельности предприятий <br>
+		проявляется в том, что с их помощью осуществляются<br>
+		перераспределение чистого дохода на платежи в бюджет<br>
+		(налог на прибыль) и прибыль, оставляемую в распоряжении<br>
+		предприятия на производственное и социальное развитие;]
+			(* 
+				<-lang_ru;;
+				=>nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

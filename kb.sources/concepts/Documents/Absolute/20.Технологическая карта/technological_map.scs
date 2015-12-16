@@ -1,4 +1,5 @@
 document => nrel_inclusion: technological_map;;
+technical_documentation => nrel_inclusion: technological_map;;
 technological_map
 	=> nrel_main_idtf: [technological map](*<- lang_en;;*);
 					   [технологическая карта](*<- lang_ru;;*);
