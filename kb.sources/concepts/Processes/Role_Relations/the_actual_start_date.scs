@@ -1,0 +1,9 @@
+rrel_actual_start_date
+        <- sc_node_role_relation;
+        <- sc_type_role_relation;
+        <- binary_relation;
+        => nrel_main_idtf:
+                [actual_start_date'](*<- lang_en;;*);
+                [фактическая дата начала'](*<- lang_ru;;*);
+        => nrel_first_domain: date;
+        => nrel_second_domain: event;;

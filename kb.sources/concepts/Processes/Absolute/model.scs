@@ -1,0 +1,17 @@
+model
+=> nrel_main_idtf:
+		[model](*<- lang_en;;*);
+		[модель](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b> Модель </b> - это система, исследование которой служит средством для получения информации о другой системе; представление некоторого реального процесса, устройства или концепции.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

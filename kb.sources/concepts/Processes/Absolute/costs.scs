@@ -1,0 +1,38 @@
+costs
+	=> nrel_main_idtf:
+		[costs](*<-lang_en;;*);
+		[расходы](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (costs)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (расходы)](*<- lang_ru;;*);;
+                         <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Расходы</b> -  затраты, уменьшение экономических выгод в результате выбытия денежных средств, иного имущества.]
+						 				(*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+			<- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        => nrel_main_idtf: [Costs of an entity](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Расходы организации](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Расходы организации<b> — это уменьшение экономических выгод в результате выбытия активов.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_using_constants: 
+			{
+				money
+			};;

@@ -1,0 +1,26 @@
+margin
+	=> nrel_main_idtf:
+		[margin](*<-lang_en;;*);
+		[маржинальная торговля](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (margin)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (маржинальная торговля)](*<- lang_ru;;*);;
+                         <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Маржинальная торговля</b> - проведение спекулятивных торговых операций с использованием денег и/или товаров, предоставляемых торговцу в кредит под залог оговоренной суммы.]
+						 				(*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+	<= nrel_using_constants: 
+			{
+				money;
+				goods;
+				nrel_credit				
+			};;
+

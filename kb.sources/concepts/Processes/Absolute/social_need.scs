@@ -1,0 +1,18 @@
+social_need
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (social_need)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (социальная потребность)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Социальная потребность</b> -  это потребность в определенном образе жизни, определенных условиях и характере труда, общении с другими людьми, самоутверждении, развитии интеллекта. ]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: need;
+	=> nrel_using_constants: need;;

@@ -1,0 +1,20 @@
+official_document
+	=> nrel_main_idtf:
+		[official_document](*<-lang_en;;*);
+		[официальный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (official_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (официальный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Официальный документ</b> - документ, созданный юридическим или физическим лицом, оформленный и удостоверенный в установленном порядке.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;;

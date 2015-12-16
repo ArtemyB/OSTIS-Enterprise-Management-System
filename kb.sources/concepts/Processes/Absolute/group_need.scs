@@ -1,0 +1,18 @@
+group_need
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (group_need)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (групповая потребность)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Групповая потребность</b> -  потребность социальной группы. ]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: need;
+	=> nrel_using_constants: need;;

@@ -1,0 +1,21 @@
+private_document
+	=> nrel_main_idtf:
+		[private_document](*<-lang_en;;*);
+		[частный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (private_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (частный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Частный документ</b> - это документ, составленный персонально частным лицом.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;
+		<= nrel_using_constants: document;;

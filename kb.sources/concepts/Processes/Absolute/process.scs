@@ -15,13 +15,7 @@ process
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);;
-								-> rrel_example:
-										[<b>Процесс</b> - это переход какого-либо объекта из состояния с одними характеристиками (на входе) в состояние с другими (на выходе).]
-										(*
-												<-lang_ru;;
-												=> nrel_format: format_html;;
-										*);;							
-                          		    	  *);;
+                                        *);;
                 *);
         <- rrel_key_sc_element:...
                 (*

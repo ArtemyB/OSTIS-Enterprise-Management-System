@@ -5,6 +5,8 @@ money
 	<- rrel_key_sc_element:...
 		(*
 			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (money)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (деньги)](*<- lang_ru;;*);;
 			<= nrel_sc_text_translation:...
 				(*
 					-> rrel_example:

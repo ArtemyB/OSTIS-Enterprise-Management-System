@@ -1,17 +1,47 @@
 method
-	=> nrel_main_idtf:[method](*<-lang_en;;*);
+	=> nrel_main_idtf:
+		[method](*<-lang_en;;*);
 		[метод](*<-lang_ru;;*);
 	<- rrel_key_sc_element:...
 		(*
-			<- sc_definition;;
-			<= nrel_sc_text_translation:...
-			(*
-				-> rrel_example:
-					"file://method_definition_ru.html"
-					(*<- lang_ru;;*);;
-			*);;
-		*);
-	=> nrel_using_constants:
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (method)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (метод)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Метод</b> - систематизированная совокупность шагов, действий, которые нацелены на решение определённой задачи, или достижение определённой цели.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+	<- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        => nrel_main_idtf: [Methods of control of organizational systems](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Методы управления организвционными системами](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Методы</b> управления организвционными системами — совокупность общенаучных методов используемых для управления в организационных системах.
+
+Методы управления подразделяются на:
+ <ul>
+    <li>Управление составом</li>
+    <li>Управление структурой</li>
+    <li>Институциональное  управление (управление ограничениями и нормами деятельности) </li>
+    <li>Мотивационное управление (управление целями и предпочтениями) </li>
+    <li>Информационное  управление  (управление  информацией, которой обладают участники ОС на момент принятия решений) </li>
+</ul>]
+ 										(*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+	<= nrel_using_constants:
 		{
 			systematization;
 			action;

@@ -1,0 +1,26 @@
+header
+=> nrel_main_idtf:
+		[header](*<- lang_en;;*);
+		[заголовок](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (header)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (заголовок)](*<- lang_ru;;*);;
+                         <= nrel_sc_text_translation:...
+                                (*
+					-> rrel_example:
+						[<b> Заголовок </b> - название книги, статьи, раздела в тексте.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+						-> rrel_example:
+						[<b> Заголовок </b> -  строка, содержащая такое название и оформленная особым образом для выделения и привлечения внимания.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_inclusion: document;;
