@@ -1,0 +1,20 @@
+authentic_document
+	=> nrel_main_idtf:
+		[authentic_document](*<-lang_en;;*);
+		[подлинный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (authentic_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (подлинный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Подлинный документ</b> - документ, сведения об авторе, времени и месте создания которого, содержащиеся в самом документе или выявленные иным путем, подтверждают достоверность его происхождения.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;;

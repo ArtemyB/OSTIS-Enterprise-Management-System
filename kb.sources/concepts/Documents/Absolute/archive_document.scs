@@ -1,0 +1,20 @@
+archive_document
+	=> nrel_main_idtf:
+		[archive_document](*<-lang_en;;*);
+		[архивный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (archive_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (архивный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Архивный документ</b> - материальный носитель с зафиксированной на нем информацией, который имеет реквизиты, позволяющие его идентифицировать, и подлежит хранению в силу значимости указанных носителя и информации для граждан, общества и государства.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;;

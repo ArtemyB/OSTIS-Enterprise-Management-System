@@ -1,0 +1,50 @@
+goods
+	=> nrel_main_idtf:
+		[goods](*<- lang_en;;*);
+		[товары](*<- lang_ru;;*);
+		[commodity](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (money)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (деньги)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Товар</b> - продукт труда, способный удовлетворить человеческую потребность и специально произведённый для обмена.] 
+						(*
+							<-lang_en;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Goods</b> is a physical object or service that has value to people and can be sold for a non-negative price in the marketplace.] 
+						(*
+							<-lang_en;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+   	<- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        => nrel_main_idtf: [Goods according to GOST](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Товар согласно ГОСТ](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Товар</b> - <i>согласно ГОСТ Р 51303-99</i> - любая вещь, не ограниченная в обороте, свободно отчуждаемая и переходящая от одного лица к другому по договору купли-продажи.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+	<= nrel_inclusion: 
+		{
+			money;
+			product
+		};
+	<= nrel_using_constants: price;;

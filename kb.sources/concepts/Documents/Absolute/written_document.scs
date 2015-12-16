@@ -1,0 +1,20 @@
+written_document
+	=> nrel_main_idtf:
+		[written_document](*<-lang_en;;*);
+		[письменный документ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+ 			<- sc_definition;;
+                        => nrel_main_idtf: [Definition (written_document)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (письменный документ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Письменный документ</b> - текстовый документ, информация которого зафиксирована любым типом письма.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+		<= nrel_inclusion: document;;

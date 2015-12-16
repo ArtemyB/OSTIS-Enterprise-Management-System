@@ -1,0 +1,18 @@
+collective_need
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (collective_need)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (коллективная потребность)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Коллективная потребность</b> -  потребности социальной группы. ]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: need;
+	=> nrel_using_constants: need;;

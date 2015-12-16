@@ -1,0 +1,22 @@
+auxiliary_process
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (auxiliary_process)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (поддерживающий процесс)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Поддерживающий процесс</b> -  процесс, который включает необходимые задания и работы для поддержания ключевых процессов, но не приводящие к непосредственной ценности для клиента.]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<= nrel_using_constants:
+		{
+			nrel_problem;
+			nrel_customer
+		};;

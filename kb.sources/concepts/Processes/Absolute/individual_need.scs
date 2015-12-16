@@ -1,0 +1,18 @@
+individual_need
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (individual_need)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (индивидуальная потребность)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Индивидуальная потребность</b> -   потребность отдельного индивида. ]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;										
+			*);;
+		*);
+	<= nrel_inclusion: need;
+	=> nrel_using_constants: need;;
