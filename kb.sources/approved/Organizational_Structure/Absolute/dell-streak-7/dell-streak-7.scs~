@@ -1,0 +1,18 @@
+dell_streak_7
+	=> nrel_main_idtf:[Dell Streak 7](*<-lang_en;;*);
+		[Dell Streak 7](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://dell_streak_7_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 16_gb;
+	<- dell;
+	<- mobile_phones;;

@@ -1,0 +1,18 @@
+regulatory_bodies
+	=> nrel_main_idtf:[Regulatory bodies](*<-lang_en;;*);
+		[Регулирующий орган](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://regulatory_bodies_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: organization; natural_person;
+	=> nrel_used_constants:
+		{
+			system
+		};;

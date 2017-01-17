@@ -1,0 +1,19 @@
+samsung_gem
+	=> nrel_main_idtf:[Samsung Gem](*<-lang_en;;*);
+		[Samsung Gem](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://samsung_gem_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 256_mb;
+	=> nrel_camera: 3_mp;
+	=> nrel_rom: 256_mb;
+	=> nrel_os: android;
+	<- samsung;
+	<- mobile_phones;;

@@ -1,0 +1,18 @@
+t_mobile_g2
+	=> nrel_main_idtf:[T-Mobile G2](*<-lang_en;;*);
+		[T-Mobile G2](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://t_mobile_g2_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 4_gb;
+	<- t_mobile;
+	<- mobile_phones;;

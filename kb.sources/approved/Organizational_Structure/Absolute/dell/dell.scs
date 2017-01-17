@@ -1,0 +1,16 @@
+dell
+	=> nrel_main_idtf:[Dell](*<-lang_en;;*);
+		[Делл](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://dell_definition_en.html"
+					(*<- lang_en;;*);
+					"file://dell_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- enterprise;;

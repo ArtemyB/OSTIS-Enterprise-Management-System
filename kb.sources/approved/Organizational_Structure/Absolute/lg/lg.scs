@@ -1,0 +1,22 @@
+lg
+	=> nrel_main_idtf:[LG](*<-lang_en;;*);
+		[LG](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[LG Group](*<-lang_en;;*);
+		[LG Corporation](*<-lang_en;;*);
+		[LG Group](*<-lang_ru;;*);
+		[ LG Corporation](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://lg_definition_en.html"
+					(*<- lang_en;;*);
+					"file://lg_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_profit: 1200_mln_y_e;
+	<- enterprise;;

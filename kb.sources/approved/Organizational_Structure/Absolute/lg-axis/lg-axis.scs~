@@ -1,0 +1,18 @@
+lg_axis
+	=> nrel_main_idtf:[LG Axis](*<-lang_en;;*);
+		[LG Axis](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://lg_axis_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 256_mb;
+	=> nrel_camera: 3_mp;
+	=> nrel_rom: 128_mb;
+	<- mobile_phones;
+	<- lg;

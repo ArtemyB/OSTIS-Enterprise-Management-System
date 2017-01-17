@@ -1,0 +1,15 @@
+the_degree_of_accounting_and_stakeholder_engagement
+	=> nrel_main_idtf:[The degree of accounting and stakeholder engagement](*<-lang_en;;*);
+		[Степень учёта и вовлечения стейкхолдеров](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://the_degree_of_accounting_and_stakeholder_engagement_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: recognized; represented; involved; in_agreement; satisfied_for_deployment; satisfied_in_use;
+	<= nrel_inclusion: stakeholder;;

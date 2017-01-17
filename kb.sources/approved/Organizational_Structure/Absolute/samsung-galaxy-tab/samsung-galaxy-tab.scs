@@ -1,0 +1,18 @@
+samsung_galaxy_tab
+	=> nrel_main_idtf:[Samsung Galaxy Tab](*<-lang_en;;*);
+		[Samsung Galaxy Tab](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://samsung_galaxy_tab_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 3_mp;
+	=> nrel_rom: 16_gb;
+	<- samsung;
+	<- mobile_phones;;

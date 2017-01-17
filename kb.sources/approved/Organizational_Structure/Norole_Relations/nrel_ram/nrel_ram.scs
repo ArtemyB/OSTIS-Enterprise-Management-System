@@ -1,0 +1,21 @@
+nrel_ram
+	=> nrel_main_idtf:[Amount of RAM](*<-lang_en;;*);
+		[Количество оперативной памяти](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[ОЗУ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_ram_definition_en.html"
+					(*<- lang_en;;*);
+					"file://nrel_ram_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	<= nrel_inclusion: electronics; technology;;

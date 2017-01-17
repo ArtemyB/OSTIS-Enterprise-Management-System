@@ -1,0 +1,18 @@
+droid_2_global_by_motorola
+	=> nrel_main_idtf:[DROID 2 Global by Motorola](*<-lang_en;;*);
+		[DROID 2 Global by Motorola](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://droid_2_global_by_motorola_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 8_gb;
+	<- motorola;
+	<- mobile_phones;;

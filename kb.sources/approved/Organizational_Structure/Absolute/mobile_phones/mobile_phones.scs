@@ -1,0 +1,21 @@
+mobile_phones
+	=> nrel_main_idtf:[Mobile phone](*<-lang_en;;*);
+		[Мобильный телефон](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Smartphone](*<-lang_en;;*);
+		[Cell phone](*<-lang_en;;*);
+		[Смартфон](*<-lang_ru;;*);
+		[ Сотовый телефон](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://mobile_phones_definition_en.html"
+					(*<- lang_en;;*);
+					"file://mobile_phones_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: goods; electromics;;

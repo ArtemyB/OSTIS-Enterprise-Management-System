@@ -1,0 +1,17 @@
+motorola_charm_with_motoblur
+	=> nrel_main_idtf:[Motorola CHARM with MOTOBLUR](*<-lang_en;;*);
+		[Motorola CHARM with MOTOBLUR](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://motorola_charm_with_motoblur_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 3_mp;
+	=> nrel_rom: 128_mb;
+	<= nrel_inclusion: motorola; mobile_phones;;

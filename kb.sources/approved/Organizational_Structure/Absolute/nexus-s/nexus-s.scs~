@@ -1,0 +1,17 @@
+nexus_s
+	=> nrel_main_idtf:[Nexus S](*<-lang_en;;*);
+		[Nexus S](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nexus_s_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_ram: 512_mb;
+	=> nrel_camera: 5_mp;
+	=> nrel_rom: 16_gb;
+	<= nrel_inclusion: nexus; mobile_phones;;
